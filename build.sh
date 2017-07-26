@@ -32,7 +32,7 @@ package_name=`get_value package_name`
 version=`get_value version`
 
 
-docker build -t "$dockeruser/${package_name}:$version" -t "$dockeruser/${package_name}:latest" . && docker push "$dockeruser/${package_name}:$version"
+docker build -t "$dockeruser/${package_name}:$version" . && docker push "$dockeruser/${package_name}:$version"
 
 
 exit 0
